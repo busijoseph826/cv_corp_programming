@@ -1,0 +1,64 @@
+----------------------------------------------------------------------Day-1-(02-10-2024)---------------------------------------------------------------------------------------------------
+
+/* 1. Write a program to print common multiple 3&4 in a given range */ 
+import java.util.Scanner;
+class Sample{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    int num1 = sc.nextInt();
+    int num2 = sc.nextInt();
+    for(int i=num1;i<=num2;i++){
+      if(i%3==0 && i%4==0){
+        System.out.print(i);
+      }
+    }
+  }
+}
+
+/* 2. Write a program to print all multiples of  3&4 in a  given range*/
+
+import java.util.Scanner;
+class Sample{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    int num1 = sc.nextInt();
+    int num2 = sc.nextInt();
+    for(int i=num1;i<=num2;i++){
+      if(i%3==0 || i%4==0){
+        System.out.print(i);
+      }
+    }
+  }
+}
+
+/* 3. Write a program to print all odd numbers given range*/
+
+import java.util.Scanner;
+class Sample{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    int num1 = sc.nextInt();
+    int num2 = sc.nextInt();
+    for(int i=num1;i<=num2;i++){
+      if(i%2!=0){
+        System.out.print(i);
+      }
+    }
+  }
+}
+
+/* 4.Write a program to print numbers from 5 to -10 */
+
+import java.util.Scanner;
+class Sample{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    int num1 = sc.nextInt();
+    int num2 = sc.nextInt();
+    for(int i=num1;i>=num2;i--){
+        System.out.print(i+" ");
+    }
+  }
+}
+
+    
