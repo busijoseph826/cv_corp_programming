@@ -1,1 +1,77 @@
+/* 1.Write a program to convert kg to g. (Input 56kg print in grams)*/
 
+import java.util.Scanner;
+class Sample{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter kg ");
+		float kg = sc.nextFloat();
+		double grms = kg*1000;
+		System.out.println(kg+" in grams is "+grms);
+	}
+}
+
+/* 2.Write a program to covert temperature from degree C to F. (Input 80C)*/
+
+import java.util.Scanner;
+class Sample{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter Temperature in degree :");
+		int degre = sc.nextInt();
+		int f = (degre *9/5) + 32;
+		System.out.println("The temperature in  Fahrenheit is "+f);
+
+	}
+}
+
+/* 3. Declare and initialize 3 three variable and print the biggest number.*/
+
+import java.util.Scanner;
+class Sample{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter Three Numbers :");
+		int num1 = sc.nextInt();
+		int num2 = sc.nextInt();
+		int num3 = sc.nextInt();
+		if(num1>num2 && num1>num3){
+			System.out.println("Greatest number is: "+num1);
+		}
+		else if(num2>num3){
+			System.out.println("Greatest number is: "+num2);
+		}else{
+			System.out.println("Greatest number is "+num3);
+		}
+
+	}
+}
+/* 4.	Write a java program that performs the following tasks.
+	a.store a number in a variable
+	b.If value is not in range (100-1000) prints wrong number else follows the steps
+	c.Check even or odd
+	d.If even divide the number by 3 and print the remainder
+	e.If odd divide the number by 2 and print the remainder. 
+*/
+
+import java.util.Scanner;
+class Sample{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a number:");
+		int num1 = sc.nextInt();
+		if(num1>100 && num1<1000){
+			if(num1%2==0){
+				System.out.println("Even");
+				System.out.println(num1%3);
+			}
+			else{
+				System.out.println("Odd");
+				System.out.println(num1%2);
+			}
+		}
+		else{
+			System.out.println("Wrong number");
+		}
+	}
+}
